@@ -1,3 +1,11 @@
+/*The first line consists of two space separated integers, N and Q. N specifies the number of lines in the HRML source program. Q specifies the number of queries.
+
+The following N lines consist of either an opening tag with zero or more attributes or a closing tag. There is a space after the tag-name, attribute-name, '=' and value.
+There is no space after the last value. If there are no attributes there is no space after tag name.
+
+Q queries follow. Each query consists of string that references an attribute in the source program.More formally, each query is of the form tagi1.tagi2.tagi3...tagim~att - name 
+where m>=1 and tagi1.tagi2.tagi3...tagim are valid tags in the input.*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

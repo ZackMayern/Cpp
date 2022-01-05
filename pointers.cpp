@@ -1,3 +1,7 @@
+/*The function is declared with a void return type, so there is no value to return. Modify the values in memory so that a contains their sum and b contains their absoluted difference.
+a' = a+b
+b' = |a-b|*/
+
 #include <stdio.h>
 #include <cmath>
 

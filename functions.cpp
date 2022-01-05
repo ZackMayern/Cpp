@@ -1,3 +1,5 @@
+/*Input will contain four integers - a,b,c,d, one per line. Return the greatest of the four integers.*/
+
 #include <iostream>
 #include <cstdio>
 using namespace std;
