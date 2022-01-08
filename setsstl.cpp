@@ -1,6 +1,6 @@
 /*The first line of the input contains Q where Q is the number of queries. The next Q lines contain 1 query each. Each query consists of two integers y and x where y is the type of the 
 query and x is an integer. 
-For queries of type 3 print "Yes"(without quotes) if the number x is present in the set and if the number is not present, then print "No"(without quotes).
+For queries of type 3 print "Yes" (without quotes) if the number x is present in the set and if the number is not present, then print "No" (without quotes).
 Each query of type 3 should be printed in a new line.*/
 
 #include <cmath>
