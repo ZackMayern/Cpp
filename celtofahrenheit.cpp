@@ -19,10 +19,14 @@ int main(){
         celToFah(cel);
         break;
     
-    default:
+    case 2:
         cout << "Enter fahrenheit measurement: " << endl;
         cin >> fah;
         fahToCel(fah);
+        break;
+
+    default:
+        cout << "Incorrect choice." << endl;
         break;
     }
 }

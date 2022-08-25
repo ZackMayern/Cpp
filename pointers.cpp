@@ -2,24 +2,24 @@
 a' = a+b
 b' = |a-b|*/
 
-#include <stdio.h>
+#include <iostream>
 #include <cmath>
 
-void update(int *a,int *b) {
-    int sum = *a + *b;
+void update(float *a,float *b) {
+    float sum = *a + *b;
     
-    int diff = *a - *b;
-    int difference = abs(diff);
+    float diff = *a - *b;
+    float difference = abs(diff);
     *a = sum;
     *b = difference;
 }
 
 int main() {
-    int a, b;
+    float a, b;
     
-    scanf("%d %d", &a, &b);
+    scanf("%f %f", &a, &b);
     update(&a, &b);
-    printf("%d\n%d", a, b);
+    printf("%f\n%f", a, b);
 
     return 0;
 }
