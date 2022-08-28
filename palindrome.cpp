@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool palindrome(string text, int n){
+void palindrome(string text, int n){
     bool flag = true;
     transform(text.begin(), text.end(), text.begin(), ::tolower);
     for(int i=0; i<n; i++)
