@@ -26,6 +26,7 @@ vector<int> vectorSearch(vector<int> a, vector<int> b){
         result.push_back(-1);
     return result;
 }
+
 int main(){
     vector<int> array, v, result;
     int n, elements;
