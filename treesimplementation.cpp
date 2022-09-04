@@ -19,4 +19,12 @@ int main(){
     root->left = new Node(2);
     root->right = new Node(3);
     root->left->right = new Node(5);
+
+    // The Tree looks like this
+    //         1
+    //       /   \ 
+    //      2     3
+    //       \  
+    //        5
+    return 0;
 }

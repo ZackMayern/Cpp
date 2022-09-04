@@ -15,6 +15,7 @@ struct Node{
     }
 };
 
+// Pre-Order Traversal
 void preOrder(Node* root){
     if(root == NULL)
         return;
@@ -23,6 +24,7 @@ void preOrder(Node* root){
     preOrder(root->right);
 }
 
+// In-Order Traversal
 void inOrder(Node* root){
     if(root == NULL)
         return;
@@ -31,6 +33,7 @@ void inOrder(Node* root){
     inOrder(root->right);
 }
 
+// Post-Order Traversal
 void postOrder(Node* root){
     if(root == NULL)
         return;
@@ -51,13 +54,13 @@ int main(){
     root->right->right->left = new Node(9);
     root->right->right->right = new Node(10);
 
-    cout << "Pre-Order Traversal" << endl;
+    cout << "Pre-Order Traversal: " << endl;
     preOrder(root);
-    cout << endl;
-    cout << "In-Order Traversal" << endl;
+    cout << endl << endl;
+    cout << "In-Order Traversal: " << endl;
     inOrder(root);
-    cout << endl;
-    cout << "Post-Order Traversal" << endl;
+    cout << endl << endl;
+    cout << "Post-Order Traversal: " << endl;
     postOrder(root);
 
     //        1

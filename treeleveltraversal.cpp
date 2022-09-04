@@ -60,11 +60,14 @@ int main(){
     root->right->left = new Node(6);
     root->right->right = new Node(7);
 
+    cout << "Pre-Order Traversal: " << endl;
     preOrder(root);
     cout << endl;
+    cout << "Breadth First Search: " << endl;
     vector<vector<int>> answer = dfs(root);
     printVector(answer);
-
+    
+    // The tree looks like this.
     //            1
     //          /   \ 
     //         2     3
