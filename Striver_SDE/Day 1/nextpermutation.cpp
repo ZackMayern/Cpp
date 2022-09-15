@@ -14,12 +14,10 @@ void nextPermutation(vector<int>& arr){
         for(l=n-1; l>k; l--){
             if(arr[l]>arr[k])
                 break;
-        }    
+        }
         swap(arr[k], arr[l]);
         reverse(arr.begin()+k+1, arr.end());
     }
-    swap(arr[k], arr[l]);
-    reverse(arr.begin()+k+1, arr.end());
 }
 
 int main(){
