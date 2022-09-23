@@ -12,17 +12,16 @@ struct ListNode{
 };
 
 ListNode* reverseList(ListNode* head){
-    ListNode* previous=NULL;
-    ListNode* current=head;
+    ListNode* previousNode=NULL;
+    ListNode* nextNode=NULL;
 
-    while(current){
-        ListNode* temp;
-        temp=current->next;
-        current->next=previous;
-        previous=current;
-        current=temp;
+    while(head!=NULL){
+        nextNode=head->next;
+        head->next=previousNode;
+        previousNode=head;
+        head=nextNode;
     }
-    return previous;
+    return previousNode;
 }
 
 bool checkPalindrome(ListNode* head){
@@ -32,7 +31,7 @@ bool checkPalindrome(ListNode* head){
     ListNode* slow=head;
     ListNode* fast=head;
 
-    while(fast!=NULL && fast->next!=NULL){
+    while(fast->next!=NULL && fast->next->next!=NULL){
         slow=slow->next;
         fast=fast->next->next;
     }
